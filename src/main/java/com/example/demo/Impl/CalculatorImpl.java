@@ -21,6 +21,12 @@ public class CalculatorImpl implements Calculator {
 
     @Override
     public Double execute(Double num1, Double num2, String operator) {
-        return num1 + num2;
+        if(operator.equals("Add")) {
+            return num1 + num2;
+        } else if(operator.equals("Sub")) {
+            return  num1 - num2;
+        } else {
+            throw new IllegalArgumentException("不支持的操作类型");
+        }
     }
 }
