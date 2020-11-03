@@ -21,6 +21,6 @@ public class CalculatorImpl implements Calculator {
 
     @Override
     public Double execute(Double num1, Double num2) {
-        return 0D;
+        return num1 + num2;
     }
 }
