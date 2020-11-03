@@ -20,7 +20,7 @@ import org.springframework.stereotype.Component;
 public class CalculatorImpl implements Calculator {
 
     @Override
-    public Double execute(Double num1, Double num2) {
+    public Double execute(Double num1, Double num2, String operator) {
         return num1 + num2;
     }
 }

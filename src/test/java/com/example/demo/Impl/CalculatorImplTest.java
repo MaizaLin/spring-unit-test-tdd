@@ -35,8 +35,12 @@ public class CalculatorImplTest {
 
     @Test
     public void TestAdd() {
-        Assert.assertTrue("简单加法测试", calculator.execute(1D, 1D).equals(2D));
+        Assert.assertTrue("简单加法测试", calculator.execute(1D, 1D, "Add").equals(2D));
     }
 
+    @Test
+    public void TestSub() {
+        Assert.assertTrue("简单减法测试", calculator.execute(2D, 1D, "Sub").equals(1D));
+    }
 
 }
