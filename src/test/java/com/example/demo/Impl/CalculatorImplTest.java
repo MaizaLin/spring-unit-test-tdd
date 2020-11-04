@@ -43,4 +43,14 @@ public class CalculatorImplTest {
         Assert.assertTrue("简单减法测试", calculator.execute(2D, 1D, "Sub").equals(1D));
     }
 
+    @Test
+    public void TestMulti() {
+        Assert.assertTrue("简单乘法测试", calculator.execute(8D, 8D, "Multi").equals(64D));
+    }
+
+    @Test
+    public void TestDiv() {
+        Assert.assertTrue("简单除法测试", calculator.execute(10D, 2D, "Div").equals(5D));
+    }
+
 }
