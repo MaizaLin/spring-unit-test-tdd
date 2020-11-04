@@ -18,7 +18,9 @@ import lombok.Getter;
 public enum OperatorEnum {
 
     Add("CalcAddModule"),
-    Sub("CalcSubModule");
+    Sub("CalcSubModule"),
+    Multi("CalcMultiModule"),
+    Div("CalcDivModule");
 
     private String beanName;
 
